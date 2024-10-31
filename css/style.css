@@ -20,7 +20,7 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
+    padding: 30px 50px 0px;
     box-sizing: border-box;
 }
 
@@ -105,6 +105,88 @@ header li {
 header li:hover {
     color: #0065FC;
     border-top: #0065FC 2px solid;
+}
+
+/****** Info group ***********/
+
+.headline {
+    margin-bottom: 35px;
+}
+
+.headline h1 {
+    margin-bottom: 8px;
+}
+
+.p-style {
+    font-size: 16px;
+    margin: 0;
+}
+
+.search-bar {
+    height: 49px;
+    width: 377px;
+    display: flex;
+    margin-bottom: 35px;
+}
+
+.search-bar form {
+    display: flex;
+}
+
+.search-bar #city-search {
+    margin: 0;
+    padding: 0;
+    width: 195px;
+    height: 49px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 1px #F2F2F2 solid;
+    border-bottom: 1px #F2F2F2 solid;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+#desktop-button {
+    width: 132px;
+    height: 49px;
+    padding: 0;
+    border-radius: 0px 15px 15px 0px;
+    background-color: #0065FC;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+}
+
+#mobile-button {
+    width: 49px;
+    height: 49px;
+    background-color: #0065FC;
+    border-radius: 15px;
+    border: none;
+    display: none;
+    margin-left: -15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#mobile-button i {
+    color: white;
+    font-size: 17px;
+}
+
+.i-box {
+    width: 50px;
+    background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.i-box i {
+    color: black;
+    font-size: 18px;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -213,4 +295,11 @@ header li:hover {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+    #desktop-button {
+        display: none;
+    }
+
+    #mobile-button {
+        display: unset;
+    }
 }
