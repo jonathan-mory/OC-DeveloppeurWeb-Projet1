@@ -348,6 +348,7 @@ header li:hover {
 
 .activites {
     margin-top: 35px;
+    margin-bottom: 35px;
     padding: 30px;
 }
 
@@ -378,6 +379,28 @@ header li:hover {
 .activites-cards .card-title {
     margin: -4px;
     padding: 20px 19px 20px 19px;
+}
+
+/****** Footer ***********/
+
+footer {
+    height: 163px;
+    width: 100%;
+    background-color: #F2F2F2;
+    display: flex;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+    gap: 15px;
+    padding: 20px;
+}
+
+footer span {
+    font-size: 18px;
+    font-weight: 700;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
