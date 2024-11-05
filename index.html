@@ -17,59 +17,69 @@
 <body>
     <!-- Etape 3 : Ajout du Header -->
     <header>
-        <div class="header-logo">
+        <div id="header-logo">
             <img src="images/logo/Booki.png" alt="Logo de Booki">
         </div>
         <nav>
             <ul>
                 <li>
-                    <a href="">Hébergements</a>
+                    <a href="#hebergements">Hébergements</a>
                 </li>
                 <li>
-                    <a href="">Activités</a>
+                    <a href="#activites">Activités</a>
                 </li>
             </ul>
         </nav>
     </header>
     <!-- Fin Etape 3 : Ajout du Header -->
-    <div class="main-container">
+    <div id="main-container">
         <main>
-            <!-- Etape 4 : Ajout du formulaire de recherche  -->
             <div id="info-group">
+            <!-- Etape 4 : Ajout du formulaire de recherche  -->
                 <div id="headline">
                     <h1 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p class="p-style">En plein centre-ville ou en pleine nature</p>
                 </div>
-                <div id="search-bar">
+                <form method="get" action="">
                     <div id="i-box">
                         <i class="fa-solid fa-location-dot"></i>
                     </div>
-                    <form method="get" action="">
-                        <input type="search" name="city" id="city-search" value="Marseille, France">
-                        <input type="submit" id="desktop-button" value="Rechercher">
-                        <button id="mobile-button"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    </form>
-                </div>
+                    <input type="search" name="city" id="city-search" value="Marseille, France">
+                    <input type="submit" id="desktop-button" value="Rechercher">
+                    <button id="mobile-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
             <!-- Fin Etape 4 : Ajout du formulaire de recherche -->
             <!-- Etape 5 : Ajout de la partie Filtres -->
                 <div id="filter-bar">
-                    <p class="title-filter">Filtres</p>
-                    <button class="filter-button" type="button">
-                        <i class="fa-solid fa-money-bill-wave"></i>
-                        <span class="name-filter">Économique</span>
-                    </button>
-                    <button class="filter-button" type="button">
-                        <i class="fa-solid fa-person"></i>
-                        <span class="name-filter">Familial</span>
-                    </button>
-                    <button class="filter-button" type="button">
-                        <i class="fa-solid fa-heart"></i>
-                        <span class="name-filter">Romantique</span>
-                    </button>
-                    <button class="filter-button" type="button">
-                        <i class="fa-solid fa-fire"></i>
-                        <span class="name-filter">Nos pépites</span>
-                    </button>
+                    <div id="filter-title">
+                        <p class="text-style1">Filtres</p>
+                    </div>
+                    <div id="filter-buttons">
+                        <div>
+                            <button class="filter-button" type="button">
+                                <i class="fa-solid fa-money-bill-wave"></i>
+                                <span class="name-filter">Économique</span>
+                            </button>
+                        </div>
+                        <div>
+                            <button class="filter-button" type="button">
+                                <i class="fa-solid fa-person"></i>
+                                <span class="name-filter">Familial</span>
+                            </button>
+                        </div>
+                        <div>
+                            <button class="filter-button" type="button">
+                                <i class="fa-solid fa-heart"></i>
+                                <span class="name-filter">Romantique</span>
+                            </button>
+                        </div>
+                        <div>
+                            <button class="filter-button" type="button">
+                                <i class="fa-solid fa-fire"></i>
+                                <span class="name-filter">Nos pépites</span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
                 <div id="info-bar">
                     <div>
@@ -79,11 +89,11 @@
                 </div>
             <!-- Fin Etape 5 : Ajout de la partie Filtres -->
             </div>
-            <div class="hebergements-and-populaires">
+            <div id="hebergements-and-populaires">
             <!-- Etape 6 et 7 : Ajout de la section Hébergements -->
-                <section class="hebergements">
+                <section id="hebergements">
                     <h2 class="section-title">Hébergements à Marseille</h2>
-                    <div class="hebergements-cards">
+                    <div id="hebergements-cards">
                         <a href="#">
                             <article class="card">
                                 <img src="images/hebergements/fred-kleber.jpg" alt="Image de la chambre de l'hôtel du Port à Marseille">
@@ -187,15 +197,15 @@
                             </article>
                         </a>
                     </div>
-                    <a href="#" id="seamore-link">Afficher plus</a>
+                    <a href="#" class="text-style1">Afficher plus</a>
                 </section>
             <!-- Fin Etape 6 et 7 : Ajout de la section Hébergements -->
-                <section class="populaires">
-                    <div class="populaires-title">
+                <section id="populaires">
+                    <div id="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
-                    <div class="populaires-cards">
+                    <div id="populaires-cards">
                         <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
@@ -257,9 +267,9 @@
                 </section>
             </div>
             <!-- Etape 8 : Ajout de la section Activités -->
-            <section class="activites">
+            <section id="activites">
                 <h2 class="section-title">Activités à Marseille</h2>
-                <div class="activites-cards">
+                <div id="activites-cards">
                     <a href="#">
                         <article class="card">
                             <img src="./images/activites/reno-laithienne.jpg" alt="Image du vieux port de Marseille">
@@ -288,27 +298,27 @@
             </section>
             <!-- Fin Etape 8 : Ajout de la section Activités -->
         </main>
-        <!-- Etape 9 : Ajout du footer -->
-        <footer>
-            <div>
-                <span>À propos</span>
-                <a href="#">Fonctionnement du site</a>
-                <a href="">Conditions générales</a>
-                <a href="">Données et confidentialité</a>
-            </div>
-            <div>
-                <span>Nos hébergements</span>
-                <a href="#">Charte qualité</a>
-                <a href="">Proposer votre hôtel</a>
-            </div>
-            <div>
-                <span>Assistance</span>
-                <a href="#">Centre d’aide</a>
-                <a href="">Nous contacter</a>
-            </div>
-        </footer>
-        <!-- Fin Etape 9 : Ajout du footer -->
     </div>
+    <!-- Etape 9 : Ajout du footer -->
+    <footer>
+        <div>
+            <span class="text-style1">À propos</span>
+            <a href="#">Fonctionnement du site</a>
+            <a href="">Conditions générales</a>
+            <a href="">Données et confidentialité</a>
+        </div>
+        <div>
+            <span class="text-style1">Nos hébergements</span>
+            <a href="#">Charte qualité</a>
+            <a href="">Proposer votre hôtel</a>
+        </div>
+        <div>
+            <span class="text-style1">Assistance</span>
+            <a href="#">Centre d’aide</a>
+            <a href="">Nous contacter</a>
+        </div>
+    </footer>
+    <!-- Fin Etape 9 : Ajout du footer -->
 </body>
 
 </html>
